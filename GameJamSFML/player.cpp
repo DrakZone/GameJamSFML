@@ -73,7 +73,7 @@ const bool Player::canAttack()
 void Player::InitTexture()
 {
 	// Load a texture from file
-	if (!this->texture.loadFromFile("GameJamSFML/Texture/pigeons.png"))
+	if (!this->texture.loadFromFile("GameJamSFML/Texture/basic_ship.png"))
 	{
 		printf("Error: PLAYER: InitTexture: could not load texture file!\n");
 		assert(false);
@@ -86,8 +86,8 @@ void Player::InitSprite()
 	this->sprite.setTexture(this->texture);
 
 	// Resize the sprite
-	this->sprite.setOrigin(16.f,16.f);
-	this->sprite.scale(2.f, 2.f);
+	this->sprite.setOrigin(8.f,8.f);
+	this->sprite.scale(4.f, 4.f);
 	this->sprite.setPosition(sf::Vector2f(500, 500));
 }
 

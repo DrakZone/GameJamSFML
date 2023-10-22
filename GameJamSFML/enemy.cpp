@@ -98,7 +98,7 @@ void Enemy::render(sf::RenderTarget* target)
 void Enemy::InitTexture()
 {
 	// Load a texture from file
-	if (!this->texture.loadFromFile("GameJamSFML/Texture/skeleton-move_0.png"))
+	if (!this->texture.loadFromFile("GameJamSFML/Texture/Level1_Ast.png"))
 	{
 		printf("Error: ENEMY: InitTexture: could not load texture file!\n");
 		assert(false);
@@ -136,7 +136,7 @@ void Enemy::InitShapes()
 		this->speed = 200;
 		this->points = 1;
 		// Resize the sprite
-		this->shape.scale(0.5f, 0.5f);
+		this->shape.scale(5.0f, 5.0f);
 		break;
 
 	case 2:
@@ -146,7 +146,7 @@ void Enemy::InitShapes()
 		this->speed = 600;
 		this->points = 5;
 		// Resize the sprite
-		this->shape.scale(0.2f, 0.2f);
+		this->shape.scale(2.0f, 2.0f);
 		break;
 
 	case 3:
@@ -156,7 +156,7 @@ void Enemy::InitShapes()
 		this->speed = 100;
 		this->points = 3;
 		// Resize the sprite
-		this->shape.scale(1.5f, 1.5f);
+		this->shape.scale(9.0f, 9.0f);
 		break;
 
 	case 4:
@@ -166,7 +166,7 @@ void Enemy::InitShapes()
 		this->speed = 90;
 		this->points = 3;
 		// Resize the sprite
-		this->shape.scale(1.0f, 1.0f);
+		this->shape.scale(7.0f, 7.0f);
 		break;
 
 	default:
